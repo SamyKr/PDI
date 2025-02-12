@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélection de Pixels</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <h1>Sélection de Pixels sur l’Image</h1>
+
+    <!-- Champ pour importer une image -->
+    <input type="file" id="imageUpload" accept="image/*">
+
+    <div id="image-container">
+        <img id="image" src="img/02-de-127_PNM-Golfe-du-Lion.jpg" width="500px">
+        <div id="zoom-loupe"></div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Pixel X</th>
+                <th>Pixel Y</th>
+                <th>Coordonnées Lambert 93</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="coordsTable"></tbody>
+    </table>
+
+    <button id="exportCSV">Télécharger CSV</button>
+
+    <script src="script/script.js"></script>
+
+</body>
+</html>
+
